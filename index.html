@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="cursor-glow"></div>
+
+    <div class="ambient-glow"></div>
+
+    <div class="container">
+
+    <div class="card-shine"></div>
+    <div class="card-dust"></div>
+
+<div class="birthday-icon">
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="14" y="30" width="36" height="22" rx="4" fill="url(#cakeBody)"/>
+        <rect x="14" y="24" width="36" height="7" rx="2" fill="#ff6ea1"/>
+        <circle cx="26" cy="19" r="8" fill="url(#frostHead)"/>
+        <rect x="20" y="14" width="8" height="10" rx="1.5" fill="#ff4d88"/>
+        <rect x="36" y="14" width="8" height="10" rx="1.5" fill="#ff4d88"/>
+        <line x1="40" y1="6" x2="40" y2="14" stroke="#ff8a4a" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="40" cy="4" r="2" fill="#ffb86c"/>
+        <defs>
+            <linearGradient id="cakeBody" x1="14" y1="30" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ff8ab0"/>
+                <stop offset="1" stop-color="#e94f86"/>
+            </linearGradient>
+            <linearGradient id="frostHead" x1="18" y1="11" x2="34" y2="27" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ffffff"/>
+                <stop offset="1" stop-color="#ffd7e6"/>
+            </linearGradient>
+        </defs>
+    </svg>
+</div>
+
+<p class="tagline">
+    ✨ A Special Surprise For Someone Amazing ✨
+</p>
+
+<h1 id="title">
+    Happy Birthday
+  <span id="personName"> {NAME} </span>
+</h1>
+
+<p class="subtitle">
+    Every beautiful memory begins with one special moment...
+</p>
+
+<button id="openBtn">
+   🎁 Open Your Surprise ✨
+</button>
+
+</div>
+
+<div class="shooting-stars">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div id="effects"></div>
+
+<div id="revealScreen">
+
+
+<div class="gift-stars">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+    
+<!-- Full-screen cinematic night backdrop: nebula fog, light rays, stars, dust, shooting stars -->
+<div class="cinema-bg">
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+    <span class="bokeh b1"></span>
+    <span class="bokeh b2"></span>
+    <span class="bokeh b3"></span>
+    <span class="bokeh b4"></span>
+    <span class="bokeh b5"></span>
+    <span class="bokeh b6"></span>
+    <div class="light-rays"></div>
+    <div class="star-field"></div>
+    <div class="dust-field"></div>
+    <div class="nebula-vignette"></div>
+    <div class="scene-shooting-stars"></div>
+</div>
+
+<div class="gift-scene">
+
+      <div class="gift-wrap">
+
+      <div class="gift-box">
+
+    <div class="gift-glow"></div>
+
+    <div class="gift-shadow"></div>
+
+     <div class="energy-burst"></div>
+
+     <div class="spark-container"></div>
+
+    <div class="gift-lid">
+
+        <div class="gift-bow">
+            <span></span>
+            <span></span>
+            <span class="bow-middle"></span>
+        </div>
+
+        <div class="gift-edge-glow"></div>
+
+    </div>
+
+    <div class="gift-body">
+
+        <div class="gift-reflect"></div>
+
+        <div class="gift-ribbon-v"></div>
+
+        <div class="gift-ribbon-h"></div>
+
+    </div>
+
+    <div class="gift-breath-glow"></div>
+
+</div>
+
+      </div>
+
+        <p class="gift-text">
+            Click the gift...
+        </p>
+
+    </div>
+
+    <!--
+<div class="photo-gallery">
+
+    <img src="assets/images/photo1.jpg" class="photo p1">
+
+</div>
+-->
+
+<div class="photo-stack">
+
+    <img src="assets/images/photo1.jpg" class="photo card1">
+
+    <img src="assets/images/photo2.jpg" class="photo card2">
+
+    <img src="assets/images/photo3.jpg" class="photo card3">
+
+    <img src="assets/images/photo4.jpg" class="photo card4">
+
+<img src="assets/images/photo5.jpg" class="photo card5">
+
+</div>
+
+<!-- ============================================
+     TYPEWRITER MESSAGE OVERLAY (after photo reveal)
+================================================ -->
+<div class="message-overlay">
+
+    <div class="message-dim"></div>
+
+    <div class="message-glow"></div>
+
+    <div class="message-text">
+
+<span class="type-line" id="line1"></span>
+        <span class="type-line" id="line2"></span>
+
+    </div>
+
+</div>
+
+<!-- ============================================
+     BIRTHDAY STORYBOOK (after typewriter message)
+================================================ -->
+<div class="storybook">
+
+<!-- Full-screen static background image -->
+    <div class="storybook-bg"></div>
+
+    <!-- Premium dark gradient overlay above the video -->
+    <div class="storybook-overlay"></div>
+
+    <div class="book">
+
+        <!-- Closed cover -->
+        <div class="book-cover">
+            <div class="cover-face">
+                <span class="cover-emoji">🎂</span>
+                <h2 class="cover-title">Happy Birthday</h2>
+                <span class="cover-name"> Recipient Name</span>
+                <span class="cover-hint">Click to Open</span>
+            </div>
+        </div>
+
+<!-- Open scrapbook pages -->
+        <div class="book-inner">
+
+            <!-- LEFT page: photo -->
+            <div class="page-left">
+                <div class="page-tape"></div>
+                <img class="page-img" src="" alt="Memory">
+                <span class="page-photo-label">Memory ✨</span>
+            </div>
+
+            <!-- RIGHT page: birthday message -->
+            <div class="page-right">
+                <div class="page-tape"></div>
+                <h3 class="page-title">A Little Note For You</h3>
+                <p class="page-wish"></p>
+                <span class="page-doodle">🎂</span>
+            </div>
+
+            <!-- Animated leaf for the page turning -->
+            <div class="flip-leaf">
+                <div class="flip-front">
+                    <img class="flip-img" src="" alt="Memory">
+                    <span class="flip-label">Memory ✨</span>
+                </div>
+                <div class="flip-back">
+                    <h3 class="flip-title">A Little Note For You</h3>
+                    <p class="flip-wish"></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="book-nav">
+            <button class="nav-btn" id="prevBtn">← Previous</button>
+            <span class="page-indicator" id="pageIndicator">Page 1 of 1</span>
+            <button class="nav-btn" id="nextBtn">Next →</button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ============================================
+     FINAL BIRTHDAY FINALE
+================================================ -->
+<section class="birthday-finale" aria-hidden="true">
+    <div class="finale-stars"></div>
+    <div class="finale-glow finale-glow-one"></div>
+    <div class="finale-glow finale-glow-two"></div>
+    <div class="finale-confetti" aria-hidden="true"></div>
+
+    <div class="finale-content">
+        <div class="finale-kicker">THE LAST LITTLE SURPRISE ✨</div>
+        <h2 class="finale-title">Wait... there's one more thing.</h2>
+        <p class="finale-subtitle">Because a few pages could never hold all the good wishes.</p>
+
+        <button class="letter" id="letterBtn" type="button" aria-label="Open your birthday letter">
+            <span class="letter-seal">♥</span>
+            <span class="letter-front">Open Me</span>
+        </button>
+
+        <div class="final-letter" id="finalLetter">
+            <div class="letter-paper">
+                <span class="letter-sparkle">✦</span>
+                <p class="letter-small">A little note, just for you</p>
+                <h3>Happy Birthday! 🎂</h3>
+                <p>May the coming year give you more reasons to laugh, more memories to keep, and more little moments that make an ordinary day feel special.</p>
+                <p>Keep being wonderfully, unapologetically you. The best chapters are still waiting to be written.</p>
+                <span class="letter-sign">With lots of good wishes ✨</span>
+            </div>
+        </div>
+
+        <div class="finale-actions">
+            <button class="finale-btn replay-btn" id="replayBtn" type="button">↻ Relive the Surprise</button>
+            <button class="finale-btn close-finale-btn" id="closeFinaleBtn" type="button">♡ Keep This Memory</button>
+        </div>
+
+        <section class="afterparty" id="afterparty" aria-label="Birthday afterparty surprises">
+            <div class="afterparty-head">
+                <span>THE AFTERPARTY 🌙</span>
+                <h3>Okay... we're not done yet.</h3>
+                <p>There are three tiny surprises hiding here. Open all three.</p>
+            </div>
+            <div class="surprise-grid">
+                <button class="surprise-card" data-surprise="capsule" type="button">
+                    <span class="surprise-icon">🕰️</span>
+                    <strong>Time Capsule</strong>
+                    <small>A message from future-you</small>
+                    <em>Open the capsule →</em>
+                </button>
+                <button class="surprise-card" data-surprise="ticket" type="button">
+                    <span class="surprise-icon">🎟️</span>
+                    <strong>Birthday Ticket</strong>
+                    <small>Your imaginary pass for this year</small>
+                    <em>Scratch the ticket →</em>
+                </button>
+                <button class="surprise-card" data-surprise="booth" type="button">
+                    <span class="surprise-icon">📸</span>
+                    <strong>Memory Booth</strong>
+                    <small>A tiny gallery from your journey</small>
+                    <em>Step inside →</em>
+                </button>
+            </div>
+            <div class="surprise-stage" id="surpriseStage" aria-live="polite">
+                <div class="capsule-result surprise-result" data-result="capsule">
+                    <div class="capsule-orb">2030</div>
+                    <div><span class="result-label">MESSAGE FROM THE FUTURE</span><h4>“You made it.”</h4><p>Whatever you're worrying about today, future-you is going to be ridiculously proud that you kept going. Keep collecting moments, not perfection.</p><span class="result-sign">— a version of you who knows how it all turned out ✦</span></div>
+                </div>
+                <div class="ticket-result surprise-result" data-result="ticket">
+                    <div class="ticket-stub">ADMIT ONE<br><b>YOUR NEXT CHAPTER</b></div>
+                    <div><span class="result-label">BIRTHDAY PASS • VALID FOREVER</span><h4>YOU ARE OFFICIALLY ALLOWED TO...</h4><p>Change your mind. Start over. Laugh too loudly. Take the long way home. Say yes to random adventures. And make this year yours.</p></div>
+                </div>
+                <div class="booth-result surprise-result" data-result="booth">
+                    <div class="mini-polaroids">
+                        <img src="assets/images/photo1.jpg" alt="Memory 1"><img src="assets/images/photo3.jpg" alt="Memory 2"><img src="assets/images/photo5.jpg" alt="Memory 3">
+                    </div>
+                    <div><span class="result-label">MEMORY BOOTH</span><h4>Proof that good days happened.</h4><p>Three little snapshots. One big reminder: there are already so many moments worth keeping.</p></div>
+                </div>
+            </div>
+            <div class="unlock-meter"><span id="unlockText">0 / 3 surprises opened</span><div><i id="unlockBar"></i></div></div>
+        </section>
+
+        <div class="memory-constellation" id="memoryConstellation" aria-label="Little birthday wishes">
+            <p class="constellation-label">Tap the little stars. They each have a wish for you ✦</p>
+            <div class="constellation-field">
+                <button class="wish-star star-1" data-wish="More reasons to smile, even on ordinary days.">✦</button>
+                <button class="wish-star star-2" data-wish="People who make you feel completely yourself.">✦</button>
+                <button class="wish-star star-3" data-wish="Tiny adventures that become your favorite memories.">✦</button>
+                <button class="wish-star star-4" data-wish="Courage for every new chapter waiting ahead.">✦</button>
+                <button class="wish-star star-5" data-wish="A year full of moments worth taking pictures of.">✦</button>
+                <button class="wish-star star-6" data-wish="Peace when you need it, and excitement when you want it.">✦</button>
+                <button class="wish-star star-7" data-wish="And, of course... an absolutely unforgettable birthday. ♡">✦</button>
+            </div>
+            <p class="wish-reveal" id="wishReveal">Choose a star ✨</p>
+        </div>
+
+        <div class="make-wish" id="makeWish">
+            <div class="candle-scene">
+                <div class="candle-flame" id="candleFlame"></div>
+                <div class="candle">21</div>
+            </div>
+            <h3>One last thing...</h3>
+            <p>Close your eyes, make a wish, and blow out the candle.</p>
+            <button class="wish-btn" id="wishBtn" type="button">✨ Make a Wish</button>
+            <p class="wish-complete" id="wishComplete">Wish sent into the universe. 💫</p>
+        </div>
+
+        <div class="ultimate-finale" id="ultimateFinale" aria-hidden="true">
+            <div class="firework firework-a"></div>
+            <div class="firework firework-b"></div>
+            <div class="firework firework-c"></div>
+            <div class="ultimate-heart">♡</div>
+            <div class="ultimate-small">AND THAT'S A WRAP...</div>
+            <h2>Happy Birthday! 🎂</h2>
+            <p>Here's to another year of stories, chaos, laughter, and beautiful memories.</p>
+            <span>May your next chapter be your favorite one yet. ✨</span>
+            <button class="finale-btn replay-btn" id="replayBtnFinal" type="button">↻ Start Again</button>
+        </div>
+    </div>
+
+    <div class="finale-bottom">Made with memories, wishes & a little bit of magic ✨</div>
+</section>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
