@@ -596,6 +596,28 @@ prevBtn.addEventListener("click", goPrev);
 
 
 /* =========================================================
+   TOUCH SWIPES — mobile storybook navigation
+========================================================= */
+let touchStartX = 0;
+let touchStartY = 0;
+if (storybook) {
+    storybook.addEventListener("touchstart", (event) => {
+        const touch = event.changedTouches[0];
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+    }, { passive: true });
+
+    storybook.addEventListener("touchend", (event) => {
+        const touch = event.changedTouches[0];
+        const dx = touch.clientX - touchStartX;
+        const dy = touch.clientY - touchStartY;
+        if (Math.abs(dx) < 55 || Math.abs(dx) < Math.abs(dy) * 1.25) return;
+        if (dx < 0) goNext();
+        else goPrev();
+    }, { passive: true });
+}
+
+/* =========================================================
    FINAL BIRTHDAY FINALE
 ========================================================= */
 
