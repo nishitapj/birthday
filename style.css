@@ -3510,6 +3510,14 @@ button, a {
    compositions to touch-first, single-column scenes.
 ========================================================= */
 @media (max-width: 768px) {
+  /* The desktop card has a float animation that changes transform.
+     On phones that would overwrite the centering transform and push the
+     card halfway off-screen. Keep the card statically centered. */
+  .container {
+    animation: none !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
   html, body {
     width: 100%;
     min-width: 0;
@@ -3521,14 +3529,16 @@ button, a {
     display: block;
     min-height: 100dvh;
     height: 100dvh;
+    overflow: hidden;
   }
 
   /* Landing card */
   .container {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) !important;
+    animation: none !important;
     width: calc(100vw - 28px);
     max-width: 430px;
     max-height: calc(100dvh - 28px);
